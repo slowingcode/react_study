@@ -5,11 +5,13 @@ import './index.css';
 //import reportWebVitals from './reportWebVitals';// eslint-disable-line no-unused-vars
 
 import Clock from './chapter_04/Clock';
+import CommenList from './chapter_05/CommentList';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() =>{
   root.render(
     <React.StrictMode>
-      <Clock />
+      <CommenList />
     </React.StrictMode>,);
 }, 1000);
 
