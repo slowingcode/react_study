@@ -1,0 +1,31 @@
+[JSX의 정의와 역할]
+
+JS 확장문법
+JavaScript + XML/HTML
+
+JSX의 역할
+js로 변환
+
+
+[JSX의 장점 및 사용법]
+JSX의 장점
+-간결한 코드 
+-가독성 향상
+-버그를 발견하기 쉬움
+-Injection Attacks 방어
+
+
+JSX 사용법
+
+
+[Elements의 정의와 생김새]
+리액트 앱을 구성하는 가장 작은 블록들
+
+[Elements의 특징 및 렌더링하기]
+Elements의 특징
+-불변성
+ : Elements 생성후에는 children이나 attributes를 바꿀 수 없다
+
+Elements 랜더링
+
+
