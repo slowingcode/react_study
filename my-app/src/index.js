@@ -1,18 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+//import App from "./App";
 import './index.css';
-import reportWebVitals from './reportWebVitals';// eslint-disable-line no-unused-vars
+//import reportWebVitals from './reportWebVitals';// eslint-disable-line no-unused-vars
 
 import Clock from './chapter_04/Clock';
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() =>{
-  ReactDOM.render(
+  root.render(
     <React.StrictMode>
       <Clock />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+    </React.StrictMode>,);
 }, 1000);
 
 // If you want to start measuring performance in your app, pass a function
