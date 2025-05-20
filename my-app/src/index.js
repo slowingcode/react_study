@@ -7,12 +7,14 @@ import "./index.css";
 import Clock from "./chapter_04/Clock";
 import CommenList from "./chapter_05/CommentList";
 import NotificationList from "./chapter_06/NotificationList";
+import App from "./Extra_AI_wordtest/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 setInterval(() => {
   root.render(
     <React.StrictMode>
-      <NotificationList />
+      {/* <NotificationList /> */}
+      <App />
     </React.StrictMode>
   );
 }, 1000);
