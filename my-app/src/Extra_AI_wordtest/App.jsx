@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import AddWord from "./AddWord";
 import WordList from "./WordList";
 import Quiz from "./Quiz";
+import ReverseQuiz from "./ReverseQuiz";
 
 export default function App() {
   const [view, setView] = useState("add");
@@ -26,12 +27,19 @@ export default function App() {
           onClick={() => setView("quiz")}
           className="px-4 py-2 bg-purple-500 text-white rounded"
         >
-          단어 테스트
+          한영 단어 테스트
+        </button>
+        <button
+          onClick={() => setView("reverse")}
+          className="px-4 py-2 bg-yellow-500 text-white rounded"
+        >
+          영한 단어 테스트
         </button>
       </div>
       {view === "add" && <AddWord />}
       {view === "list" && <WordList />}
       {view === "quiz" && <Quiz />}
+      {view === "reverse" && <ReverseQuiz />}
     </div>
   );
 }
